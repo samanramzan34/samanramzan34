@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,62 +8,60 @@
 <style>
 body {
     margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background: #0f172a;
-    color: white;
+    font-family: Arial, sans-serif;
+    background: #f8fafc;
+    color: #1e293b;
 }
 
 header {
+    background: #0f172a;
+    color: white;
     text-align: center;
-    padding: 50px;
+    padding: 60px 20px;
 }
 
 header h1 {
-    font-size: 3rem;
-    color: #38bdf8;
+    margin: 0;
+    font-size: 2.5rem;
 }
 
 header p {
-    font-size: 1.2rem;
-    color: #cbd5f5;
+    margin-top: 10px;
+    color: #94a3b8;
 }
 
 section {
-    padding: 50px;
-}
-
-.card {
-    background: #1e293b;
-    padding: 20px;
-    margin: 15px;
-    border-radius: 15px;
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 0px 20px #38bdf8;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
 }
 
 h2 {
-    color: #38bdf8;
+    border-left: 4px solid #0ea5e9;
+    padding-left: 10px;
 }
 
-button {
-    padding: 10px 20px;
-    background: #38bdf8;
-    border: none;
+.card {
+    background: white;
+    padding: 20px;
+    margin-top: 15px;
     border-radius: 10px;
-    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 
-button:hover {
-    background: #0ea5e9;
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0f172a;
+    color: white;
 }
 </style>
 
@@ -76,56 +72,76 @@ button:hover {
 <header>
     <h1>Saman Ramzan</h1>
     <p>BS Computer Science Student | Graphic Designer | Creative Leader</p>
-    <button onclick="scrollToSection()">Explore My Work</button>
 </header>
 
-<section id="about">
+<section>
     <h2>About Me</h2>
     <div class="card">
-        <p>
-        I am a BSCS student at Fatima Jinnah Women University with strong experience in 
-        graphic designing, leadership, and community work. I have worked with multiple 
-        organizations and actively contribute to creative and social initiatives.
-        </p>
+        I am a Computer Science student at Fatima Jinnah Women University with a passion 
+        for graphic designing, leadership, and community work. I have actively worked 
+        in multiple organizations and enjoy creating impactful designs and projects.
     </div>
 </section>
 
 <section>
     <h2>Education</h2>
-    <div class="grid">
-        <div class="card">BS Computer Science (2024–2028)<br>FJWU</div>
-        <div class="card">ICS (A Grade)</div>
-        <div class="card">Matric (A+ Grade)</div>
+    <div class="card">
+        <ul>
+            <li>BS Computer Science – FJWU (2024–2028)</li>
+            <li>ICS – A Grade</li>
+            <li>Matric (Science) – A+ Grade</li>
+        </ul>
     </div>
 </section>
 
 <section>
     <h2>Skills</h2>
-    <div class="grid">
-        <div class="card">Graphic Designing</div>
-        <div class="card">Canva & Figma</div>
-        <div class="card">C / C++</div>
-        <div class="card">SEO Writing</div>
-        <div class="card">Leadership</div>
-        <div class="card">Teaching & Mentoring</div>
+    <div class="card">
+        <ul>
+            <li>Graphic Designing (Canva, Figma)</li>
+            <li>Basic Programming (C, C++)</li>
+            <li>SEO Content Writing</li>
+            <li>Leadership & Team Management</li>
+            <li>Teaching & Mentoring</li>
+        </ul>
     </div>
 </section>
 
 <section>
     <h2>Experience</h2>
-    <div class="grid">
-        <div class="card">Chief Graphic Designer - CBS</div>
-        <div class="card">Head Designer - PMYDC</div>
-        <div class="card">Teacher - Hussain Academy</div>
-        <div class="card">Volunteer - Heal Pakistan</div>
+    <div class="card">
+        <ul>
+            <li>Chief Graphic Designer – CBS, FJWU</li>
+            <li>Head of Graphic Designing – PMYDC</li>
+            <li>Teacher – Hussain Academy</li>
+            <li>Volunteer – Heal Pakistan & Go Green</li>
+        </ul>
     </div>
 </section>
 
 <section>
-    <h2>Certificates & Achievements</h2>
+    <h2>Courses</h2>
     <div class="card">
-        Multiple certificates in Web Development, SEO Writing, Community Service, 
-        Leadership roles, and Graphic Designing.
+        <ul>
+            <li>Web Development – CTTI Rawalpindi</li>
+            <li>SEO Content Writing – NextGen Digital University</li>
+            <li>Quranic Studies (2 Months Course)</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Certificates</h2>
+    <div class="card">
+        <ul>
+            <li>Web Development Certificate</li>
+            <li>Recognition as Chief Graphics Designer (CBS)</li>
+            <li>Most Active Member – CBS</li>
+            <li>Community Service (Flood Relief Drive)</li>
+            <li>Poster Designing – National Seminars</li>
+            <li>Mental Health Mela Organization</li>
+            <li>CLC & VFP Appreciation Certificates</li>
+        </ul>
     </div>
 </section>
 
@@ -137,11 +153,9 @@ button:hover {
     </div>
 </section>
 
-<script>
-function scrollToSection() {
-    document.getElementById("about").scrollIntoView({ behavior: "smooth" });
-}
-</script>
+<footer>
+    © 2026 Saman Ramzan | Portfolio
+</footer>
 
 </body>
 </html>
